@@ -11,7 +11,8 @@ const images = [
     url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
     alt: "Group of Horses Running",
   },
-];
+]; 
+// знайшов список
 const gallery = document.querySelector(".gallery");
 
 //повертаю рядок елементами <li> і <img> , додаю класи
@@ -28,7 +29,9 @@ const createGallery = (images) => {
 // Виклик з масивом images як аргументом
 createGallery(images);
 
-// _________________________________________________________________________________________________________________________________
+//_______________________________________________________________________________
+
+// === покроковий варіант ===
 
 // const gallery = document.querySelector(".gallery");
 // console.log(listGallery);
