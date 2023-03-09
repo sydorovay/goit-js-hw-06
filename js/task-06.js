@@ -1,4 +1,4 @@
-// вивести input
+// отримати посилання на input
 const input = document.querySelector("#validation-input");
 
 // додати до 'input' слухача, для спостереження за втратою фокуса, з колбеком  (порівняння з dataLength)

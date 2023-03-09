@@ -1,9 +1,9 @@
-// посилання на input та span
+//отримати посилання на input та span
 const inputName = document.querySelector("#name-input");
 const outputName = document.querySelector("#name-output");
 
 //  додати слухача на інпут, перевірити поточне значення інпуту,
-// задати значення спану при пустому інпуті, додавання тексту в спан
+// задати значення спану при пустому інпуті, додати текст в спан
 inputName.addEventListener("input", () => {
   outputName.value === ""
     ? (outputName.textContent = "Anonymous")

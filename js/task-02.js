@@ -7,12 +7,10 @@ const ingredients = [
   "Condiments",
 ];
 
-// знайшов список
-
+// отримати посилання на список
 const list = document.querySelector("#ingredients");
 
-// створення масиву з присвоєнням назв (текстовий вміст), та класу елементам списку і вивід в список
-
+// створити масив з присвоєнням назв (текстовий вміст), та класу елементам списку і вивід в список
 const completeTheList = ingredients.map((ingredient) => {
   const items = document.createElement("li");
   items.textContent = ingredient;

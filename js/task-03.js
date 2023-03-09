@@ -12,21 +12,22 @@ const images = [
     alt: "Group of Horses Running",
   },
 ]; 
-// знайшов список
+
+// отримати посилання на список
 const gallery = document.querySelector(".gallery");
 
-//повертаю рядок елементами <li> і <img> , додаю класи
+//повернути в рядок елементи <li> з <img> , додати класи.
 const createGalleryItem = ({ url, alt }) => {
   return `<li class="gallery-item"><img src="${url}" alt="${alt}" class="gallery-photo"></li>`;
 };
 
-//перетворюю елементи масиву в елементи галереї з допомогою попередньої ф-ції, з'єдную в один рядок і додаюцією до списку галереї
+//перетворити елементи масиву в елементи галереї з допомогою попередньої ф-ції, з'єднати в один рядок і додати до списку галереї
 const createGallery = (images) => {
   const galleryItems = images.map(createGalleryItem).join("");
   gallery.insertAdjacentHTML("beforeend", galleryItems);
 };
 
-// Виклик з масивом images як аргументом
+// Викликати з масивом images як аргументом
 createGallery(images);
 
 //_______________________________________________________________________________
