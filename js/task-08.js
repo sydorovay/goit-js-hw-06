@@ -1,8 +1,8 @@
 // Отримати посилання на форму
 const loginForm = document.querySelector(".login-form");
 // Додати слухача до форми
-loginForm.addEventListener('submit', (event) => {
-	//  Отримати доступ до елементів форми
+loginForm.addEventListener("submit", (event) => {
+  //  Отримати доступ до елементів форми
   const emailInput = loginForm.elements.email;
   const passwordInput = loginForm.elements.password;
   // скасувати перезавантаження сторінки
@@ -22,6 +22,3 @@ loginForm.addEventListener('submit', (event) => {
     loginForm.reset();
   }
 });
-
-
-
