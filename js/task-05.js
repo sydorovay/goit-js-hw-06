@@ -5,10 +5,13 @@ const outputName = document.querySelector("#name-output");
 //  додати слухача на інпут, перевірити поточне значення інпуту,
 // задати значення спану при пустому інпуті, додати текст в спан
 inputName.addEventListener("input", () => {
-  outputName.value === ""
+  inputName.value === ""
     ? (outputName.textContent = "Anonymous")
     : (outputName.textContent = inputName.value);
+  F;
 });
+
+console.log(inputName.value);
 
 // ________________________________________________________
 
